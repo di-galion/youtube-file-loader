@@ -1,0 +1,64 @@
+@mixin flex_base {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.loader {
+  padding: 1rem 2rem;
+  position: relative;
+}
+.text {
+  font-size: 20px;
+  color: blue;
+}
+.subtext {
+  font-size: 15px;
+  color: grey;
+}
+.flex {
+  @include flex_base
+}
+.flex_main {
+  @include flex_base;
+  &:hover > * {
+      color: rgb(126, 126, 249)!important;
+  }
+}
+.drag {
+  margin: 0.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed grey;
+  background-color: white;
+}
+.dragtext {
+  color: #333;
+  font-size: 22px;
+  font-weight: 600;
+}
+.error {
+  color: red;
+  font-size: 15px;
+}
+.errortext {
+  color: red!important;
+}
+.input {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+.files {}
+.file {
+  margin-top: 0.5rem;
+  font-size: 15px;
+}
+.trashicon {
+  color: red;
+}

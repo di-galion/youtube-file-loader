@@ -1,0 +1,11 @@
+.main_container {
+  width: 500px;
+  margin: 3rem auto;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+body {
+  background-color: #454545;
+}
